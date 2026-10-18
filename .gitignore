@@ -1,0 +1,51 @@
+# ===== Pentest — nunca versionar material sensível =====
+# Imagens de VM / discos
+*.vdi
+*.vmdk
+*.ova
+*.ovf
+*.vbox
+*.vbox-prev
+
+# Segredos e credenciais
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_rsa.*
+*.kdbx
+*secret*
+*password*.txt
+creds*.txt
+credentials*.txt
+
+# Capturas e dumps brutos (reveja antes de versionar manualmente)
+*.pcap
+*.pcapng
+dump*.sql
+*.dump
+loot/
+raw/
+
+# Arquivo de projeto do Burp (pode conter sessões/tokens)
+*.burp
+
+# ===== Lixo de SO / editor =====
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+*.swp
+.idea/
+.vscode/
+
+# ===== Node / builds de alvos clonados =====
+node_modules/
+dist/
+build/
+__pycache__/
+*.pyc
+
+# Trabalho de OSINT sobre pessoa real (Eduardo Paes) — NAO publicar
+/M1 - D2 - Reconhecimento e Coleta de informação (OSINT)/
